@@ -2,7 +2,7 @@
 
 client_id = "77b30095d6959c00c181c750e2ed8b6f"
 name = "Product CSV Exporter"
-application_url = "https://example.com"
+application_url = "https://product-csv-exporter.vercel.app"
 embedded = true
 
 [access_scopes]
@@ -21,7 +21,9 @@ api_version = "2026-10"
   topics = [ "app/scopes_update" ]
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://product-csv-exporter.vercel.app/auth/callback"
+]
 
 [build]
 include_config_on_deploy = true
